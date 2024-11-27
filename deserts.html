@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .container {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .desserts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .dessert-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dessert-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dessert-content {
+            padding: 15px;
+        }
+        .dessert-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0;
+        }
+        .dessert-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0;
+        }
+        .preparation-time {
+            font-size: 0.9rem;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Submit a Recipe</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Desserts</h1>
+        <div class="desserts-grid">
+            <div class="dessert-card">
+                <img src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=full" alt="Chocolate Cake">
+                <div class="dessert-content">
+                    <h2 class="dessert-title">Chocolate Cake</h2>
+                    <p class="dessert-description">A rich and moist chocolate cake, perfect for any celebration.</p>
+                    <p class="preparation-time">Preparation Time: 60 minutes</p>
+                </div>
+            </div>
+            <div class="dessert-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaBW7Y6k3DVZuBeQcfLRrhK3k1Eeose9NQgA&s" alt="Cheesecake">
+                <div class="dessert-content">
+                    <h2 class="dessert-title">Cheesecake</h2>
+                    <p class="dessert-description">Creamy and delicious cheesecake, topped with fresh berries.</p>
+                    <p class="preparation-time">Preparation Time: 30 minutes</p>
+                </div>
+            </div>
+            <div class="dessert-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkt8t2u0Tfa3zHkKZRorSk0otjBTYA3WgNkg&s" alt="Tiramisu">
+                <div class="dessert-content">
+                    <h2 class="dessert-title">Tiramisu</h2>
+                    <p class="dessert-description">A classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                    <p class="preparation-time">Preparation Time: 20 minutes</p>
+                </div>
+            </div>
+            <div class="dessert-card">
+                <img src="https://www.culinaryhill.com/wp-content/uploads/2023/07/Fresh-Fruit-Tart-Culinary-Hill-1200x-800.jpg" alt="Fruit Tart">
+                <div class="dessert-content">
+                    <h2 class="dessert-title">Fruit Tart</h2>
+                    <p class="dessert-description">A buttery tart filled with pastry cream and topped with fresh fruits.</p>
+                    <p class="preparation-time">Preparation Time: 40 minutes</p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <p>&copy; 2024 Recipe Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

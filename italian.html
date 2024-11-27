@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Dishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .container {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .dish-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dish-content {
+            padding: 15px;
+        }
+        .dish-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0;
+        }
+        .dish-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0;
+        }
+        .cooking-time {
+            font-size: 0.9rem;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Submit a Recipe</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Italian Dishes</h1>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?quality=90&resize=440,400" alt="Spaghetti Carbonara">
+                <div class="dish-content">
+                    <h2 class="dish-title">Spaghetti Carbonara</h2>
+                    <p class="dish-description">A classic Roman pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                    <p class="cooking-time">Cooking Time: 20 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://media.istockphoto.com/id/1168754685/photo/pizza-margarita-with-cheese-top-view-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=psLRwd-hX9R-S_iYU-sihB4Jx2aUlUr26fkVrxGDfNg=" alt="Margherita Pizza">
+                <div class="dish-content">
+                    <h2 class="dish-title">Margherita Pizza</h2>
+                    <p class="dish-description">A simple yet delicious pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+                    <p class="cooking-time">Cooking Time: 30 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://media.istockphoto.com/id/535851351/photo/lasagna-on-a-square-white-plate.jpg?s=612x612&w=0&k=20&c=Rg1K7z4NlWhy2qexaym_GJ0khcJFSJUJgToTN2cRspM=" alt="Lasagna">
+                <div class="dish-content">
+                    <h2 class="dish-title">Lasagna</h2>
+                    <p class="dish-description">Layered pasta dish with meat, cheese, and rich tomato sauce.</p>
+                    <p class="cooking-time">Cooking Time: 1 hour</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://www.allrecipes.com/thmb/854efwMYEwilYjKr0FiF4FkwBvM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/85389-gourmet-mushroom-risotto-DDMFS-4x3-a8a80a8deb064c6a8f15452b808a0258.jpg" alt="Risotto">
+                <div class="dish-content">
+                    <h2 class="dish-title">Risotto</h2>
+                    <p class="dish-description">Creamy rice dish cooked with broth and flavored with various ingredients.</p>
+                    <p class="cooking-time">Cooking Time: 40 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://media.istockphoto.com/id/1398679790/photo/tiramisu-cake-on-white-ceramic-plate.jpg?s=612x612&w=0&k=20&c=2Xoc4JhqSh05A8bbUE1igFQDC-TF7vwT9_cQZWZyHCc=" alt="Tiramisu">
+                <div class="dish-content">
+                    <h2 class="dish-title">Tiramisu</h2>
+                    <p class="dish-description">A coffee-flavored dessert made with layers of mascarpone cheese and cocoa.</p>
+                    <p class="cooking-time">Cooking Time: 30 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZc_5akz38TdUNmI6Pvpq-vqr3fKpt4p1-w&s" alt="Pesto Pasta">
+                <div class="dish-content">
+                    <h2 class="dish-title">Pesto Pasta</h2>
+                    <p class="dish-description">Pasta tossed with a fresh basil pesto sauce, garlic, and pine nuts.</p>
+                    <p class="cooking-time">Cooking Time: 25 minutes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <p>&copy; 2024 Recipe Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

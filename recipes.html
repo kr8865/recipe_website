@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards</title>
+    <style>
+        body {
+            background-image: url("https://st3.depositphotos.com/13324256/17303/i/450/depositphotos_173034766-stock-photo-woman-writing-down-recipe.jpg");
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+
+        }
+        .card {
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .card-description {
+            font-size: 1rem;
+            color: #666;
+        }
+        .card-button {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .card-button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">RECIPES</h1>
+    <div class="container">
+        <!-- Recipe Card 1 -->
+        <div class="card">
+            <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/11/red-sauce-pasta-1.jpg" alt="Recipe 1">
+            <div class="card-content">
+                <h2 class="card-title">RED SAUCE PASTA</h2>
+                <p class="card-description">A classic Italian pasta dish made with veggies, cheese, pancetta, and pepper.</p>
+                <a href="https://www.indianhealthyrecipes.com/masala-pasta/" class="card-button">View Recipe</a>
+            </div>
+        </div>
+        <!-- Recipe Card 2 -->
+        <div class="card">
+            <img src="https://feastwithsafiya.com/wp-content/uploads/2022/03/chicken-curry-recipe.jpg" alt="Recipe 2">
+            <div class="card-content">
+                <h2 class="card-title">Chicken Curry</h2>
+                <p class="card-description">A flavorful chicken curry with a blend of spices, tomatoes, and coconut milk.</p>
+                <a href="https://www.indianhealthyrecipes.com/chicken-curry/" class="card-button">View Recipe</a>
+            </div>
+        </div>
+        <!-- Recipe Card 3 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiphrNcjfvL_UgvwWdgU6GdmJzN-6qV7MleA&s" alt="Recipe 3">
+            <div class="card-content">
+                <h2 class="card-title">Vegetable Stir Fry</h2>
+                <p class="card-description">A quick and healthy stir fry with fresh vegetables and a tangy sauce.</p>
+                <a href="https://therecipecritic.com/vegetable-stir-fry/" class="card-button">View Recipe</a>
+            </div>
+        </div>
+        <br><br>
+            <!--recipe card 4-->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpnIwQ79XUuyxcet-fVoPJf2iplEspFK5DJQ&s" alt="Recipe 3">
+                <div class="card-content">
+                    <h2 class="card-title">POHA</h2>
+                    <p class="card-description">A quick and healthy fired rice with veggies .</p>
+                    <a href="https://www.indianhealthyrecipes.com/poha-recipe-kanda-batata-poha/" class="card-button">View Recipe</a>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLyMtAoE9ARATTFkYK1GtZ24CpOBtxcna2Q&s" alt="Recipe 3">
+                    <div class="card-content">
+                        <h2 class="card-title">PANNER </h2>
+                        <p class="card-description">A quick and healthy stir fry with fresh vegetables and a tangy sauce.</p>
+                        <a href="https://hebbarskitchen.com/shahi-paneer-recipe-shahi-paneer-masala/" class="card-button">View Recipe</a>
+                    </div>
+                </div>
+    
+</body>
+</html>

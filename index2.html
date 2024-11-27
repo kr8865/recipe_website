@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Recipe Logo">
+            <h1>My Recipe Site</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="./submit.html">Submit a Recipe</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-filters">
+            <input type="text" placeholder="Search recipes...">
+            <select>
+                <option value="">Category</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <select>
+                <option value="">Dietary Preference</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+            </select>
+            <button>Search</button>
+        </section>
+        <section class="recipes">
+            <div class="recipe-card">
+                <img src="images/recipe.jpg" alt="Recipe Image">
+                <h2>Recipe Name</h2>
+                <p>Short description of the recipe...</p>
+                <p><strong>Cooking time:</strong> 30 mins | <strong>Difficulty:</strong> Easy</p>
+            </div>
+            <!-- Additional recipe cards would go here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Recipe Site. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

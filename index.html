@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Heaven</title>
+    <style>
+        /* Base styles for all devices */
+body {
+    font-size: 16px; /* Default font size */
+}
+
+/* Styles for devices wider than 600px */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px; /* Larger font size for wider screens */
+    }
+}
+
+/* Styles for devices wider than 900px */
+@media (min-width: 900px) {
+    body {
+        font-size: 20px; /* Even larger font size for desktop */
+    }
+}
+
+        body {
+           
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-bar {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .container {
+            padding-top: 80px;
+        }
+        .hero {
+            background-image: url("https://img.freepik.com/premium-photo/notebook-used-culinary-recipes-with-handwritten-notes-food-stains-illustrated-recipes_301716-7633.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: balck;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+        }
+        .hero a {
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .hero a:hover {
+            background-color: #0056b3;
+        }
+        .categories{
+    
+            background-image: url("https://media.istockphoto.com/id/478776512/photo/cookbook-and-kitchen-utensils.jpg?s=612x612&w=0&k=20&c=mXOrOoYCrEUrbkP0NKvFQzaay7IREY7q1i0I_0EUEkA=");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .categories, .popular-recipes {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .categories h2, .popular-recipes h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .category-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .category {
+            background-color: #fff;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .recipe-content {
+            padding: 15px;
+        }
+        .recipe-title {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .recipe-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./recipes.html">Recipes</a></li>
+            <li><a href="./submit.html">Submit a Recipe</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Welcome to Recipe Heaven</h1>
+            <p>Discover the best recipes from around the world!</p>
+            <a href="#about">Explore Recipes</a>
+        </section>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for recipes...">
+            <section class="search-filters">
+                <select>
+                    <option value="" style="height:30px;">Category</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+                <select>
+                    <option value="">Dietary Preference</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                </select>
+                <button>Search</button>
+            </section>
+        </div>
+
+        <section class="categories" id="about">
+            <h2>Recipe Categories</h2>
+            <div class="category-list">
+                <div class="category" >
+                    <img src="https://media.istockphoto.com/id/1227415751/photo/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-caprese-salad-and-tomato.jpg?s=612x612&w=0&k=20&c=0qCRhYGQw0w6ahhVX-4ezayA9r81A81cwbPDbgRlC5s=" alt="Italian">
+                    <h3>Italian</h3>
+                    <a href="./italian.html" style=" padding:20px; color:black; text-decoration: none;">CLICK ON ME</a>
+                </div>
+                <div class="category">
+                    <img src="https://cdn.vox-cdn.com/thumbor/fWdJKI_dirNSL2bBWVVWVW_I4-Q=/0x0:7360x4912/1200x800/filters:focal(3092x1868:4268x3044)/cdn.vox-cdn.com/uploads/chorus_image/image/67000785/shutterstock_1435374326.0.jpg" alt="Indian">
+                    <h3>Indian</h3>
+                    <a href="./indian.html" style=" padding:20px; color:black; text-decoration: none;">CLICK ON ME</a>
+                </div>
+                <div class="category">
+                    <img src="https://cdn.hswstatic.com/gif/desserts-update.jpg" alt="Desserts">
+                    <h3>Desserts</h3>
+                    <a href="./deserts.html" style=" padding:20px; color:black; text-decoration: none;">CLICK ON ME</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-recipes" id="recipes">
+            <h2>Popular Recipes</h2>
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?quality=90&resize=440,400" alt="Recipe 1">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Spaghetti Carbonara</h3>
+                        <p class="recipe-description">A classic Italian dish with creamy sauce and pancetta.</p>
+                    </div>
+                    <a href="https://www.recipetineats.com/carbonara/" style="text-decoration: none; color:red; text-align: center;" >GET A RECIPE</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani-recipe-480x270.jpg" alt="Recipe 2">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chicken Biryani</h3>
+                        <p class="recipe-description">A flavorful Indian rice dish with tender chicken and spices.</p>
+                    </div>
+                    <a href="https://ministryofcurry.com/chicken-biryani/" style="text-decoration: none; color:red; text-align: center;" >GET A RECIPE</a>
+                </div>
+                <div class="recipe-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGcD5VhAHG9nohDNWrV_08mUZ_IP6CuqytzQ&s" alt="Recipe 3">
+                    <div class="recipe-content">
+                        <h3 class="recipe-title">Chocolate Cake</h3>
+                        <p class="recipe-description">A rich and moist dessert for chocolate lovers.</p>
+                    </div>
+                    <a href="https://www.indianhealthyrecipes.com/chocolate-cake-recipe/" style="text-decoration: none; color:red; text-align: center;" >GET A RECIPE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer" id="contact">
+        <p>&copy; 2024 Recipe Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

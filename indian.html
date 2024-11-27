@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Dishes</title>
+    <style>
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .container {
+            padding-top: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .dishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .dish-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .dish-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dish-content {
+            padding: 15px;
+        }
+        .dish-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0;
+        }
+        .dish-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0;
+        }
+        .cooking-time {
+            font-size: 0.9rem;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Submit a Recipe</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Indian Dishes</h1>
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <img src="https://static.toiimg.com/thumb/53205522.cms?imgsize=302803&width=800&height=800" alt="Butter Chicken">
+                <div class="dish-content">
+                    <h2 class="dish-title">Butter Chicken</h2>
+                    <p class="dish-description">A rich and creamy dish made with marinated chicken cooked in a spiced tomato gravy.</p>
+                    <p class="cooking-time">Cooking Time: 45 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg" alt="Biryani">
+                <div class="dish-content">
+                    <h2 class="dish-title">Biryani</h2>
+                    <p class="dish-description">A fragrant rice dish cooked with marinated meat and aromatic spices.</p>
+                    <p class="cooking-time">Cooking Time: 1 hour</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/palak-paneer-4.jpg" alt="Palak Paneer">
+                <div class="dish-content">
+                    <h2 class="dish-title">Palak Paneer</h2>
+                    <p class="dish-description">Spinach curry with paneer cubes, flavored with Indian spices.</p>
+                    <p class="cooking-time">Cooking Time: 30 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFHMCZ7CnPo5NEqxOwyckoODeiRyLxYmiHg&s" alt="Chole Bhature">
+                <div class="dish-content">
+                    <h2 class="dish-title">Chole Bhature</h2>
+                    <p class="dish-description">Spicy chickpeas served with deep-fried bread, a popular North Indian dish.</p>
+                    <p class="cooking-time">Cooking Time: 50 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6LUswYhEpzZPjXeGJNtdUKPYeCuGz0JoBQ&s" alt="Dosa">
+                <div class="dish-content">
+                    <h2 class="dish-title">Dosa</h2>
+                    <p class="dish-description">Crispy crepes made from fermented rice and lentil batter, often served with chutney.</p>
+                    <p class="cooking-time">Cooking Time: 30 minutes</p>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvYe10xwM-YcKB5jf_T0pPYJDFhBuhQCw3A&s" alt="Samosa">
+                <div class="dish-content">
+                    <h2 class="dish-title">Samosa</h2>
+                    <p class="dish-description">Fried or baked pastry filled with spiced potatoes and peas, a popular snack.</p>
+                    <p class="cooking-time">Cooking Time: 40 minutes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <p>&copy; 2024 Recipe Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
